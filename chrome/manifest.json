@@ -5,6 +5,10 @@
 	"description": "Dieses Plugin verändert die Darstellung von VB-Paradise. Erstellt von nafets3646 und timmi31061.",
 	"version": "1.0",
 
+	"permissions": [
+		"storage"
+	],
+
 	"content_scripts": [
 		{
 			"matches": ["http://vb-paradise.de/*",

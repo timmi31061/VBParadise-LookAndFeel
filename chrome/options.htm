@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VB-Paradise - Look'n'Feel - Einstellungen</title>
+		<meta charset="UTF-8" />
+
+		<style type="text/css">
+			html, body {
+				font-family: Calibri, Arial, Sans-Serif;
+				font-size: 12pt;
+				background-color: #24608f;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			h1, h2 {
+				margin: 0;
+				font-weight: normal;
+			}
+
+			#main {
+				width: 90%;
+				margin-left: 5%;
+				min-height: 100%;
+
+				background-color: #ffffff;
+				box-shadow: 0 0 25px #000000;
+				padding: 0 10px 0 10px;
+			}
+
+			.shrink {
+				white-space: nowrap;
+				width: 0;
+			}
+
+			.expand {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<h1>VB-Paradise - Look'n'Feel - Einstellungen</h1>
+			<table>
+				<tr>
+					<td colspan=2><h2>Link des Logos umleiten</h2></td>
+				</tr>
+				<tr>
+					<td class="shrink"><label for="logolink_activated">Aktiviert: </label></td>
+					<td class="expand"><input type="checkbox" id="logolink_activated" name="logolink_activated" /></td>
+				</tr>
+				<tr>
+					<td class="shrink"><label for="logolink_target">Ziel: </label></td>
+					<td class="expand"><input type="text" id="logolink_target" name="logolink_target" class="expand" /></td>
+				</tr>
+
+				<tr>
+					<td colspan=2><h2>Hintergrundfarbe für Posts des Thread-Erstellers</h2></td>
+				</tr>
+				<tr>
+					<td class="shrink"><label for="tc_postcolor_activated">Aktiviert: </label></td>
+					<td class="expand"><input type="checkbox" id="tc_postcolor_activated" name="tc_postcolor_activated" /></td>
+				</tr>
+				<tr>
+					<td class="shrink"><label for="tc_postcolor_color">Farbe (hexadezimal): </label></td>
+					<td class="expand"><input type="text" id="tc_postcolor_color" name="tc_postcolor_color" class="expand" /></td>
+				</tr>
+
+				<tr>
+					<td colspan=2><h2>Hintergrundfarbe der Avatare entfernen</h2></td>
+				</tr>
+				<tr>
+					<td class="shrink"><label for="remove_avatar_bg_activated">Aktiviert: </label></td>
+					<td class="expand"><input type="checkbox" id="remove_avatar_bg_activated" name="remove_avatar_bg_activated" /></td>
+				</tr>
+			</table>
+			<input type="button" id="save" value="Speichern" />
+			<input type="button" id="loadDefaults" value="Standardwerte laden" />
+		</div>
+
+		<script src="options.js"></script>
+	</body>
+</html>
