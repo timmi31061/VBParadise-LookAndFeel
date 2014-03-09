@@ -16,7 +16,7 @@ function save() {
 			"tc_postcolor_activated": document.getElementById("tc_postcolor_activated").checked,
 			"tc_postcolor_color": document.getElementById("tc_postcolor_color").value,
 
-			"remove_avatar_bg_activated": document.getElementById("remove_avatar_bg_activated").value
+			"remove_avatar_bg_activated": document.getElementById("remove_avatar_bg_activated").checked
 		},
 		function() {
 		});
@@ -25,14 +25,7 @@ function save() {
 
 
 function load() {
-	chrome.storage.local.get([
-		"logolink_activated",
-		"logolink_target",
-		"tc_postcolor_activated",
-		"tc_postcolor_color",
-		"remove_avatar_bg_activated"
-	],
-	function(res) {
+	chrome.storage.local.get(null, function(res) {
 		if(res.logolink_activated == undefined) {
 			loadDefaults();
 			save();

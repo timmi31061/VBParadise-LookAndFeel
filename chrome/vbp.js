@@ -43,14 +43,7 @@ function setDefaults() {
 		});
 }
 
-chrome.storage.local.get([
-		"logolink_activated",
-		"logolink_target",
-		"tc_postcolor_activated",
-		"tc_postcolor_color",
-		"remove_avatar_bg_activated"
-	],
-	function(res) {
+chrome.storage.local.get(null, function(res) {
 		if(res.logolink_activated == undefined) {
 			setDefaults();
 			window.location.reload();

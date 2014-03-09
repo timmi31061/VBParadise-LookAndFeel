@@ -2,8 +2,8 @@
 	"manifest_version": 2,
 
 	"name": "VB-Paradise Look'n'Feel",
-	"description": "Dieses Plugin verändert die Darstellung von VB-Paradise. Erstellt von nafets3646 und timmi31061.",
-	"version": "1.0",
+	"description": "Dieses Plugin verändert die Darstellung von VB-Paradise.",
+	"version": "1.1.1",
 
 	"permissions": [
 		"storage"
