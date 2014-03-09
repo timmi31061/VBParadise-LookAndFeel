@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+
+	"name": "VB-Paradise Look'n'Feel",
+	"description": "Dieses Plugin verändert die Darstellung von VB-Paradise. Erstellt von nafets3646 und timmi31061.",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["http://vb-paradise.de/*",
+						"http://*.vb-paradise.de/*",
+						"https://vb-paradise.de/*",
+						"https://*.vb-paradise.de/*"],
+			"js": ["vbp.js"]
+		}
+	],
+	"options_page": "options.htm"
+}
